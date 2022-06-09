@@ -1,38 +1,67 @@
-.App {
+.home--component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-search--form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.rules--sticky {
   text-align: center;
+  background-color: yellow;
+  margin: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rules--list {
+  padding: .5rem;
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.connected--links{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login--form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.login--sticky {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(67, 222, 243); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.room--component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 61, 239);
+  margin: 1rem;
+}
+
+.room--list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
