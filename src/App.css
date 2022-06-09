@@ -8,18 +8,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.rules--sticky {
-  text-align: center;
+.sticky--green {
+  background-color: rgb(104, 252, 116);
+}
+
+.sticky--yellow {
   background-color: yellow;
-  margin: 1rem;
-  padding: .5rem;
+}
+
+.sticky--blue {
+  background-color: rgb(97, 244, 255);
+}
+
+.sticky--pink {
+  background-color: rgb(255, 61, 239);
+}
+
+.sticky {
   display: flex;
-  align-items: center;
+  flex-direction: column; 
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .rules--list {
@@ -27,41 +41,38 @@
   margin: 1rem;
 }
 
-.connected--links{
+.sticky--button {
+  padding: .3rem;
+  margin: .3rem;
+  border-radius: 25px;
+  text-shadow: 1px;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+.mainAppComponent {
+    background-image: 
+    linear-gradient(
+      90deg, transparent 0%, transparent 10%, 
+      #EA858A 10%, #EA858A calc(10% + 3px), 
+      transparent calc(10% + 3px), transparent 100%
+    ), 
+    linear-gradient(
+      180deg, white 10%, transparent 10%
+    ),
+    repeating-linear-gradient(
+      180deg, #91C1E1 0px, #91C1E1 2px,
+      transparent 2px, transparent 38px
+    ), 
+    linear-gradient(white,white);
+  height: 100vh;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
 }
 
 .login--form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.login--sticky {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(67, 222, 243); 
-}
-
-.room--component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 61, 239);
-  margin: 1rem;
-}
-
-.room--list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
